@@ -1,0 +1,23 @@
+/* Write a simple program to take a single number, then print out all the prime
+numbers up to that number - use loop/s and arrays - see the Sieve of
+Eratosthenes*/
+
+fun main(args: Array<String>) {
+	var a = args[0].toInt()
+    if(a<1) println("ERROR")
+    if(a==1) print("1 ")
+    else{
+        print(" 1 ")
+    	val allNum = 2..a
+    	for(num in allNum){
+        	var i = 2
+        	while(i<=num){
+            	
+            	if(i==num) print(" $num ")
+                if(num%i==0) break;
+        		i++;
+        }
+            
+    }
+    }
+}
